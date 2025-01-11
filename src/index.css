@@ -1,0 +1,122 @@
+body {
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  height: 40rem;
+  width: 35rem;
+  background-color: white;
+  border-radius: 9px;
+  box-shadow: 7px -5px 9px #4b4b53;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.heading {
+  font-size: 50px;
+  font-weight: 900;
+  padding-top: 7px;
+  margin: 0px;
+  font-family: revert;
+}
+.action-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.user-container,
+.com-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.af-img {
+  width: 175px;
+}
+.score-board {
+  height: 70px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-score,
+.computer-score {
+  height: 95%;
+  width: 95%;
+  font-size: 40px;
+  font-family: Impact;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result-statement {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f3e5f5, #e8f5e9);
+  border: 2px solid #bdbdbd;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.rock-container,
+.paper-container,
+.scissor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.af-button {
+  font-size: 40px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #64b5f6, #1976d2);
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.af-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.af-button:active {
+  transform: scale(1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scissor-container .af-button {
+  transform: rotate(90deg);
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #424242;
+  margin: 0;
+}
